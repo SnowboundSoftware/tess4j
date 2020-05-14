@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>net.sourceforge.tess4j</groupId>
+    <groupId>com.snowbound.tess4j</groupId>
     <artifactId>tess4j</artifactId>
     <version>4.5.2-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -24,6 +24,9 @@
         TIFF, JPEG, GIF, PNG, and BMP image formats
         Multi-page TIFF images
         PDF document format
+
+	    ## Snowbound
+	    Forked from https://github.com/nguyenq/tess4j to remove slf4j bridges
     </description>
 
     <parent>
@@ -46,9 +49,9 @@
     </organization>
 
     <scm>
-        <connection>scm:svn:https://github.com/nguyenq/tess4j/trunk/</connection>
-        <developerConnection>scm:svn:https://github.com/nguyenq/tess4j/trunk/</developerConnection>
-        <url>https://github.com/nguyenq/tess4j/trunk/</url>
+        <connection>scm:svn:https://github.com/snowbound/tess4j/trunk/</connection>
+        <developerConnection>scm:svn:https://github.com/snowbound/tess4j/trunk/</developerConnection>
+        <url>https://github.com/snowbound/tess4j/trunk/</url>
     </scm>
 
     <developers>
@@ -85,12 +88,12 @@
 
     <distributionManagement>
       <snapshotRepository>
-        <id>nexus-snapshots</id>
-        <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        <id>snapshots</id>
+        <url>https://qa-jenkins-ar01.snowbound.local/repository/snapshots/</url>
       </snapshotRepository>
       <repository>
-        <id>ossrh</id>
-        <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        <id>snowbound</id>
+        <url>https://qa-jenkins-ar01.snowbound.local/repository/snowbound/</url>
       </repository>
     </distributionManagement>
   
